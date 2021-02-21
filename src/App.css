@@ -6,6 +6,12 @@
   height: 40vmin;
   pointer-events: none;
 }
+.error {
+  background-color: red;
+  border: double 4px darkred;
+  color: darkred;
+  padding: 1em;
+}
 
 @media (prefers-reduced-motion: no-preference) {
   .App-logo {
