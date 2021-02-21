@@ -11,7 +11,7 @@ export default function Explore({user}) {
     const fb = useContext(fbContext)
     let posts = useBigFBD()
     let test = ['1', '2']
-    console.log(test[0])
+    console.log(test)
     console.log(posts.posts)
     const renderRow = ({index, style}) => (
         <div style={{...style, ...{display: "flex"}}}>
