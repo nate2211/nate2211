@@ -9,13 +9,13 @@ import Posts from "../../logic/posts";
 import useBigFBD from "../../hooks/useBigFBD";
 export default function Explore({user}) {
     const fb = useContext(fbContext)
-    let [posts] = useBigFBD()
+    let posts = useBigFBD()
     let test = ['1', '2']
     console.log(test[0])
-    console.log(posts[0])
+    console.log(posts.posts)
     const renderRow = ({index, style}) => (
         <div style={{...style, ...{display: "flex"}}}>
-            <p>{posts[index].Title}</p>
+            <p>{posts.posts[index].Title}</p>
             <h1>hey</h1>
         </div>
 
